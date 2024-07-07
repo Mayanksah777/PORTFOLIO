@@ -9,18 +9,51 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Mayank sah hello to me</div>
+        <div class="logo">Mayank sah  </div>
       <div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">experience</a></li>
             <li><a href="#projects">project</a></li>
-            <li><a href="#contacts ">job</a></li>
+            <li><a href="#contacts ">contacts</a></li>
 
 
         </ul>
       </div>  
     </nav>
+    
+      <nav id="hamburger-nav">
+        <div class="logo">Mayank sah</div>
+        <div class="hamburger-menu" >
+          <div class="hamburger-icon " onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+         <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience"onclick="toggleMenu()">experience</a></li>
+          <li><a href="#projects"onclick="toggleMenu()">project</a></li>
+          <li><a href="#contacts "onclick="toggleMenu()">contacts</a></li>
+
+
+         </div>
+        </div>
+      
+    </nav>
+    <section id="profile">
+      <div class="section__pic.container">
+        <img src="Mayankprofile1.jpg" alt="">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello,I'm</p>
+        <h1 class="title">Mayank Sah</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('Mayank.pdf')">Download CV</button>
+        </div>
+      </div>
+    </section>
   <script src="script.js"></script>  
 </body>
 </html>
