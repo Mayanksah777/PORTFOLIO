@@ -240,107 +240,159 @@ font-weight: 600;
     gap: 1rem;
 }
 /* aboutsection*/
-#about
-{
+/* aboutsection */
+/* aboutsection */
+#about {
     position: relative;
 }
-.about-containers
-{
- gap: 2rem;
- margin-bottom: 2rem;
- margin-top: 2rem;
 
-}
-.about-details-container
-{
-    justify-content: center;
-    flex-direction: column;
-
-}
-.about-containers,
-.about-details-container
-{
-    display: flex;
-}
-.about-pic
-{
-    border-radius: 2rem;
-
-}
-
-.arrow
-{
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-
-}
-.details-container
-{
- padding: 1.5rem;
- flex: 1;
- background: white;
- border-radius: 2rem;
- border: solid rgb(53,53, 53)  0.1 rem solid;
- border-color: rgb(163, 163, 163);
- text-align: center;
-}
-.section-container{
-    
-    gap: 4rem;
+.section-container {
+    display: flex; /* Flexbox for side-by-side alignment */
+    gap: 4rem; /* Space between image and details */
     height: 80%;
-
 }
-.section__pic-container
-{
-    height: 400px;
-    width: 400px;
+
+.section__pic-container {
+    flex: 0 0 400px; /* Fixed width for the image container */
+    height: 400px; /* Fixed height for the image container */
     margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+.about-details-container {
+    flex: 1; /* Take the remaining space next to the image */
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    justify-content: center;
+    gap: 2rem; /* Gap between details sections */
+}
+
+.details-container {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: solid rgb(53, 53, 53) 0.1rem;
+    border-color: rgb(163, 163, 163);
+    text-align: left; /* Align text to the left */
+    gap: 1rem; /* Space between icon and text */
+}
+
+.details-container .icon {
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.details-container h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.details-container p {
+    margin: 0;
+}
+
+.text-container {
+    margin-top: 2rem; /* Separate from details containers */
+}
+
+.about-pic {
+    border-radius: 2rem;
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+
+/*EXPERIENCE SECTION*/
 
 #experience {
     position: relative;
-  }
-  
-  .experience-sub-title {
+}
+
+.experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
-  }
-  
-  .experience-details-container {
+}
+
+.experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .article-container {
+}
+
+.article-container {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  }
-  
-  article {
+}
+
+article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
-  }
-  
-  article .icon {
+}
+
+article .icon {
     cursor: default;
-  }
-  
+}
+
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.frontend {
+    margin-bottom: 2rem; /* Add margin between frontend and backend sections */
+}
+
+.details-container {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    text-align: center;
+}
+
   /* PROJECTS SECTION */
   
+#projects{
+    position: relative;
+}
+.color-container{
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
 
-
+.project-img
+{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.project-title
+{
+    margin: 1rem;
+    color: black;
+}
+.project-btn
+{
+    color: black;
+    border-color: rgb(163, 163,163);
+}
 
 
 
