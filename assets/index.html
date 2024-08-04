@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +43,7 @@
       
     </nav>
     <section id="profile">
-      <div class="section__pic.container">
+      <div class="section__pic-container">
         <img src="MAYANKprofile2.png" alt="my profile pic">
       </div>
       <div class="section__text">
@@ -67,22 +68,22 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
           <div class="section__pic-container">
-              <img src="profile3.png" alt="profile pic" class="about-pic"/>
+              <img src="profile3.png" alt="Profile pic" class="about-pic"/>
           </div>
           <div class="about-details-container">
-              <div class="details-container">
-                  <img src="experience.png" alt="experience icon" class="icon"/>
-                  
-                  <h3>Experience</h3>
-                  
-                  <p>Hey I'm B.tech fourth year student with hands on skill <br> on HTML,CSS,Javascript</p>
-              </div>
-              <div class="details-container">
-                  <img src="education.png" alt="education icon" class="icon">
-                  
-                  <h3>Education</h3>
-                  
-                  <p>10+2 RKS Vidya Mandir(CBSE) <br> B.tech JIS University(2021-2025)</p>
+              <div class="about-containers">
+                  <!-- Applied details-container class to Experience section -->
+                  <div class="details-container"> <!-- Change made here -->
+                      <img src="experience.png" alt="Experience icon" class="icon"/>
+                      <h3>Experience</h3>
+                      <p>Hey I'm B.tech fourth year student with hands on skill <br> on HTML,CSS,Javascript</p>
+                  </div>
+                  <!-- Education section already using details-container class -->
+                  <div class="details-container">
+                      <img src="education.png" alt="education icon" class="icon">
+                      <h3>Education</h3>
+                      <p>10+2 RKS Vidya Mandir(CBSE) <br> B.tech JIS University(2021-2025)</p>
+                  </div>
               </div>
               <div class="text-container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minima esse ipsa similique ullam fugit impedit velit enim odit amet provident molestiae culpa, omnis alias, dolores obcaecati quaerat tenetur eius harum reprehenderit in odio error aperiam! Non, esse officia repellat obcaecati suscipit veniam dolore vitae sit, assumenda facilis eos aliquam.</p>
@@ -91,6 +92,7 @@
       </div>
       <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
   </section>
+  
   
   <section id="experience">
     <p class="section__text__p1">Explore My </p>
@@ -174,7 +176,7 @@
     </div>
     <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
   </section>
-  <section id="Projects">
+  <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
@@ -182,22 +184,22 @@
     
       <div class="details-container color-container ">
         <div class="article-container">
-          <img src="project-1.png" alt="project 1"
+          <img src="project-1.png" alt="Project 1"
           class="project-img">
         </div>
         <h2 class="experience-sub-title project-title">Project One</h2>
         <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"onclick="location.href='https://github.com/'">
+          <button class="btn btn-color-2 project-btn"onclick="location.href='https://github.com/Mayanksah777'">
             Github
           </button>
-          <button class="btn btn-color-2 project-btn"onclick="location.href='https://github.com/'">
+          <button class="btn btn-color-2 project-btn"onclick="location.href='https://github.com/Mayanksah777'">
             Live demo
           </button>
         </div>
       </div>
       <div class="details-container color-container ">
         <div class="article-container">
-          <img src="project-2.png" alt="project 2"
+          <img src="project-2.png" alt="Project 2"
           class="project-img">
         </div>
         <h2 class="experience-sub-title project-title">Project Two</h2>
@@ -211,11 +213,37 @@
         </div>
       </div>
       </div>
-      
     </div>
     <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
   
   </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title"> Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="email.png" alt="Email icon" class="icon contact-icon email-icon">
+         <p><a href="mailto:example@gmail.com">Example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+         <p><a href="https://www.linkedin.com/in/mayank-sah-4239701b3/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts ">Contacts</a></li>
+      </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Mayank Sah. All rights reserved</p>
+  </footer>
   <script src="script.js"></script>  
 </body>
 </html>
